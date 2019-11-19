@@ -1,6 +1,6 @@
 # Docker in LinuxKit in Docker (dinlind)
 
-Sometimes you need to run i[Docker in Docker](https://hub.docker.com/_/docker/), but it not a meaningful security boundary because you need to run a privileged docker container (see [Do Not Use Docker in Docker for CI](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)).
+Sometimes you need to run [Docker in Docker](https://hub.docker.com/_/docker/), but it not a meaningful security boundary because you need to run a privileged docker container (see [Do Not Use Docker in Docker for CI](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)).
 
 LinuxKit is a nice way to run Docker hosts. It's how Docker Desktop works on macOS and Windows. Fully emulated qemu doesn't need privileges and is supported by LinuxKit. Let's use that to host our Docker in Docker, so we don't need to use privileged containers.
 
